@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OECD Teaching Compass: 교사 재교육 웹 콘텐츠</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #333;
+        }
+        /* Custom button hover effect */
+        .btn-primary {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #3b82f6; /* Deeper blue on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Scroll to top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Place at the bottom */
+            right: 20px; /* Place at the right */
+            z-index: 99; /* Ensure it's above other content */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 50%; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #scrollToTopBtn:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                <i class="fas fa-compass fa-2x"></i>
+                <h1 class="text-3xl font-bold tracking-tight">OECD Teaching Compass</h1>
+            </div>
+            <nav class="space-x-4">
+                <a href="#introduction" class="hover:text-blue-200 transition duration-300">소개</a>
+                <a href="#principles" class="hover:text-blue-200 transition duration-300">핵심 원칙</a>
+                <a href="#applications" class="hover:text-blue-200 transition duration-300">실제 적용</a>
+                <a href="#resources" class="hover:text-blue-200 transition duration-300">자료</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <!-- Introduction Section -->
+        <section id="introduction" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800 flex items-center space-x-2">
+                <i class="fas fa-info-circle text-blue-500"></i>
+                <span>소개: OECD Teaching Compass란?</span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                OECD Teaching Compass는 교사들이 끊임없이 변화하는 교육 환경에서 전문성을 개발하고 혁신적인 교육 방식을 도입할 수 있도록 돕기 위해 개발된 종합적인 자료입니다. 이 도구는 교사들이 자신의 역량을 강화하고, 학생들에게 더 나은 학습 경험을 제공하며, 미래 사회의 요구에 부응하는 교육 시스템을 구축하는 데 필요한 지침을 제공합니다.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                이 웹 콘텐츠는 Teaching Compass의 핵심 내용을 요약하고, 교사들이 자신의 교육 실천에 적용할 수 있는 구체적인 아이디어를 제공하며, 동료 교사들과의 협력을 촉진하는 것을 목표로 합니다.
+            </p>
+            <div class="mt-6 text-center">
+                <button class="btn-primary bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 flex items-center justify-center mx-auto space-x-2">
+                    <i class="fas fa-book-open"></i>
+                    <span>전체 문서 살펴보기</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Key Principles Section -->
+        <section id="principles" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800 flex items-center space-x-2">
+                <i class="fas fa-lightbulb text-yellow-500"></i>
+                <span>핵심 원칙</span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                OECD Teaching Compass는 다음의 핵심 원칙들을 기반으로 합니다. 이 원칙들은 모든 교사가 자신의 교육 방식을 성찰하고 개선하는 데 도움이 됩니다.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="font-bold text-xl text-blue-700 mb-2 flex items-center space-x-2">
+                        <i class="fas fa-users-cog"></i>
+                        <span>교사의 전문성 개발</span>
+                    </h3>
+                    <p class="text-gray-600">지속적인 학습과 성장을 통해 교사의 역량을 강화하고, 변화하는 교육 트렌드에 발맞춥니다.</p>
+                </div>
+                <div class="bg-yellow-50 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="font-bold text-xl text-yellow-700 mb-2 flex items-center space-x-2">
+                        <i class="fas fa-handshake"></i>
+                        <span>협력적 학습 환경</span>
+                    </h3>
+                    <p class="text-gray-600">교사 간, 교사와 학생 간의 활발한 상호작용을 통해 학습 공동체를 형성합니다.</p>
+                </div>
+                <div class="bg-green-50 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="font-bold text-xl text-green-700 mb-2 flex items-center space-x-2">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>디지털 리터러시 강화</span>
+                    </h3>
+                    <p class="text-gray-600">디지털 도구와 자원을 효과적으로 활용하여 교육의 질을 향상시킵니다.</p>
+                </div>
+                <div class="bg-purple-50 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="font-bold text-xl text-purple-700 mb-2 flex items-center space-x-2">
+                        <i class="fas fa-chart-line"></i>
+                        <span>학습 성과 평가 혁신</span>
+                    </h3>
+                    <p class="text-gray-600">단순한 지식 평가를 넘어 학생의 전인적 성장을 지원하는 평가 방식을 모색합니다.</p>
+                </div>
+                <div class="bg-red-50 p-5 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="font-bold text-xl text-red-700 mb-2 flex items-center space-x-2">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>교사의 웰빙과 번아웃 예방</span>
+                    </h3>
+                    <p class="text-gray-600">교사의 정신적, 신체적 건강을 보호하고, 지속 가능한 교육 활동을 지원합니다.</p>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <button class="btn-primary bg-yellow-500 text-white py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-75 flex items-center justify-center mx-auto space-x-2">
+                    <i class="fas fa-magic"></i>
+                    <span>원칙별 심층 학습 시작</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Practical Applications Section -->
+        <section id="applications" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800 flex items-center space-x-2">
+                <i class="fas fa-cogs text-green-500"></i>
+                <span>실제 적용: 교실에서의 활용</span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Teaching Compass의 원칙들을 실제 교실 환경에서 어떻게 적용할 수 있는지에 대한 구체적인 아이디어를 제공합니다.
+            </p>
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row items-start md:space-x-4 bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <div class="flex-shrink-0 mb-4 md:mb-0">
+                        <i class="fas fa-chalkboard-teacher fa-2x text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 mb-1">참여형 수업 설계</h3>
+                        <p class="text-gray-600">학생 중심의 활동, 토론, 프로젝트 기반 학습을 통해 학생들의 적극적인 참여를 유도합니다.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start md:space-x-4 bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <div class="flex-shrink-0 mb-4 md:mb-0">
+                        <i class="fas fa-comments fa-2x text-teal-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 mb-1">피드백과 성찰</h3>
+                        <p class="text-gray-600">학생들에게 건설적인 피드백을 제공하고, 자신의 교육 방식에 대해 지속적으로 성찰하는 시간을 가집니다.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start md:space-x-4 bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <div class="flex-shrink-0 mb-4 md:mb-0">
+                        <i class="fas fa-share-alt fa-2x text-orange-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800 mb-1">동료 교사와의 협력</h3>
+                        <p class="text-gray-600">수업 노하우 공유, 공동 연구, 멘토링 등을 통해 동료 교사들과 함께 성장합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <button class="btn-primary bg-green-500 text-white py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 flex items-center justify-center mx-auto space-x-2">
+                    <i class="fas fa-play-circle"></i>
+                    <span>교실 적용 사례 영상 보기</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Further Resources Section -->
+        <section id="resources" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800 flex items-center space-x-2">
+                <i class="fas fa-atlas text-purple-500"></i>
+                <span>추가 자료</span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                OECD Teaching Compass에 대한 더 깊이 있는 학습을 위한 추가 자료를 제공합니다.
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-3">
+                <li class="flex items-center">
+                    <i class="fas fa-link text-blue-500 mr-2"></i>
+                    <a href="#" class="text-blue-600 hover:underline">OECD Teaching Compass 공식 웹사이트 (영문)</a>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                    <a href="#" class="text-blue-600 hover:underline">Teaching Compass 보고서 PDF 다운로드</a>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-video text-pink-500 mr-2"></i>
+                    <a href="#" class="text-blue-600 hover:underline">관련 웨비나 및 강연 영상</a>
+                </li>
+            </ul>
+            <div class="mt-6 text-center">
+                <button class="btn-primary bg-purple-500 text-white py-3 px-6 rounded-lg font-semibold text-lg shadow-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-75 flex items-center justify-center mx-auto space-x-2">
+                    <i class="fas fa-question-circle"></i>
+                    <span>질문하기 / 피드백 남기기</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 text-center rounded-t-xl shadow-lg">
+        <p class="text-sm">&copy; 2025 OECD Teaching Compass. All rights reserved.</p>
+        <p class="text-sm mt-2">이 웹 콘텐츠는 교사 재교육을 위해 제작되었습니다.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="맨 위로"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
